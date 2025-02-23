@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form action="" method="" name="myform" id="myForm" enctype="multipart/form-data"></form> -->
+
+    <form action="">
+      <label for="name">Enter Name</label>
+      <input
+        type="text"
+        placeholder="EnterYourName"
+        id="name"
+        name="user"
+        minlength="3"
+        maxlength="20"
+        value="Abdullah"
+      />
+      <br />
+      <label for="age">Enter Age</label>
+      <input
+        type="number"
+        placeholder="Enter Your Age"
+        id="age"
+        name="age"
+        required
+        min="18"
+        max="60"
+        value="32"
+      />
+      <br />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter Your Email"
+        required
+      />
+      <br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="password"
+        id="password"
+        minlength="5"
+        maxlength="8"
+        required
+      />
+      <button id="pbtn" onclick="fun()">
+        <i class="fa-regular fa-eye" id="icon"></i>
+      </button>
+      <br />
+      <input type="submit" value="Submit" id="" />
+      <input type="reset" value="Reser" id="" />
+      <input type="button" value="Click" id="" />
+      <br />
+      <button type="button">I'm a Button</button>
+      <button type="submit">I'm a Submit</button>
+      <button type="reset">I'm a Reset</button>
+      <br />
+    </form>
+
+    <script>
+      const password = document.getElementById("password");
+      const icon = document.getElementById("icon");
+      function fun() {
+        if (password.type === "password") {
+          password.type = "text";
+          icon.classList.remove("fa-eye");
+          icon.classList.add("fa-eye-slash");
+        } else {
+          password.type = "password";
+          icon.classList.remove("fa-eye-slash");
+          icon.classList.add("fa-eye");
+        }
+      }
+    </script>
+  </body>
+</html>
