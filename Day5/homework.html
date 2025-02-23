@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <center>
+      <h1>Registration Forms</h1>
+      <fieldset>
+        <legend>Admin Registration Form</legend>
+        <form>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter your name"
+          />
+          <br /><br />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter your email"
+          />
+
+          <br /><br />
+          <label for="Phone-no">Phone No.</label>
+          <input
+            type="number"
+            name="phone-no"
+            id="phone-no"
+            required
+            placeholder="Enter your phone no."
+            minlength="10"
+            maxlength="10"
+          />
+          <br /><br />
+
+          <label for="course">Course</label>
+          <select name="course" id="course" required>
+            <option value="select-course">Select Course</option>
+            <option value="java-fullstack">Java Fullstack</option>
+            <option value="python-fullstack">Python Fullstack</option>
+            <option value="mean-stack">MEAN Stack</option>
+            <option value="mern-stack">MERN Stack</option>
+            <option value="reactjs">React Js</option>
+          </select>
+          <br /><br />
+          <label for="gender">Gender</label>
+          br
+          <input type="radio" name="gender" id="gender" /> Male
+          <input type="radio" name="gender" id="gender" /> Female
+          <input type="radio" name="gender" id="gender" /> Others <br /><br />
+          <label for="address">Address</label>
+          <textarea
+            name="address"
+            id="address"
+            cols="30"
+            rows="10"
+            required
+            placeholder="Enter your address"
+          ></textarea>
+            <br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>User Registration Form</legend>
+        <form>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter your name"
+          />
+          <br /><br />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter your email"
+          />
+
+          <br /><br />
+          <label for="Phone-no">Phone No.</label>
+          <input
+            type="number"
+            name="phone-no"
+            id="phone-no"
+            required
+            placeholder="Enter your phone no."
+            minlength="10"
+            maxlength="10"
+          />
+          <br /><br />
+
+          <label for="course">Course</label>
+          <select name="course" id="course" required>
+            <option value="select-course">Select Course</option>
+            <option value="java-fullstack">Java Fullstack</option>
+            <option value="python-fullstack">Python Fullstack</option>
+            <option value="mean-stack">MEAN Stack</option>
+            <option value="mern-stack">MERN Stack</option>
+            <option value="reactjs">React Js</option>
+          </select>
+          <br /><br />
+          <label for="gender">Gender</label>
+          <input type="radio" name="gender" id="gender" /> Male
+          <input type="radio" name="gender" id="gender" /> Female
+          <input type="radio" name="gender" id="gender" /> Others <br /><br />
+          <label for="address">Address</label>
+          <textarea
+            name="address"
+            id="address"
+            cols="30"
+            rows="10"
+            required
+            placeholder="Enter your address"
+          ></textarea>
+            <br /><br />
+            <input type="submit" value="Submit" />
+            
+        </form>
+      </fieldset>
+    </center>
+  </body>
+</html>
